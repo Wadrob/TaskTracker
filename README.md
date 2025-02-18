@@ -1,6 +1,6 @@
 # Task Manager
 
-A simple command-line Task Manager application in Java that allows users to add, update, delete, mark, and list tasks stored in a JSON file.
+A simple command-line Task Manager application in Java that allows users to add, update, delete, mark, and list tasks stored in a JSON file. Did as a challenge from roadmap.sh.
 
 # Features
 
@@ -56,4 +56,6 @@ Task (ID: 1) changed status: in-progress
 To execute unit tests:
 
 mvn test
+
+Did https://roadmap.sh/projects/task-tracker
 
