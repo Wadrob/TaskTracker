@@ -9,7 +9,8 @@ import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
-import static manager.helper.TaskFileHelper.*;
+import static manager.helper.TaskFileHelper.getObjectMapper;
+import static manager.helper.TaskFileHelper.getTasksFromFile;
 import static manager.parser.TaskCommandParser.*;
 import static manager.utils.TaskListUtil.getNextId;
 import static manager.utils.TaskListUtil.isTaskRemoved;
@@ -28,7 +29,7 @@ public class TaskManagerService {
         int id = getNextId(tasksList);
         String description = getDescriptionForAdd(line);
 
-        if (tasksList.isEmpty()){
+        if (tasksList.isEmpty()) {
             tasksList = new ArrayList<>();
         }
 
